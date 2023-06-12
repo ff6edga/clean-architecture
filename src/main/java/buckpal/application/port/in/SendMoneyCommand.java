@@ -2,6 +2,7 @@ package buckpal.application.port.in;
 
 import javax.validation.constraints.NotNull;
 import lombok.Getter;
+import shared.SelfValidating;
 
 @Getter
 public class SendMoneyCommand extends SelfValidating<SendMoneyCommand> {
