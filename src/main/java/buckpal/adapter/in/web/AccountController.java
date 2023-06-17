@@ -1,6 +1,7 @@
 package buckpal.adapter.in.web;
 
 import buckpal.application.port.in.GetAccountBalanceQuery;
+import buckpal.application.port.in.SendMoneyUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
