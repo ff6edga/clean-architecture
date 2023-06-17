@@ -1,5 +1,5 @@
 package buckpal.application.port.in;
 
-public class SendMoneyUserCase {
+public class SendMoneyUseCase {
 
 }

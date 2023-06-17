@@ -1,14 +1,14 @@
 package buckpal.application.service;
 
 import buckpal.application.port.in.SendMoneyCommand;
-import buckpal.application.port.in.SendMoneyUserCase;
+import buckpal.application.port.in.SendMoneyUseCase;
 import buckpal.application.port.out.LoadAccountPort;
 import javax.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @Transactional
-public class SendMoneyService implements SendMoneyUserCase {
+public class SendMoneyService implements SendMoneyUseCase {
 
   private final LoadAccountPort loadAccountPort;
   private final AccountLock accountLock;
