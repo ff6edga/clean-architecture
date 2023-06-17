@@ -1,6 +1,7 @@
 package buckpal.adapter.in.web;
 
 import buckpal.application.port.in.SendMoneyCommand;
+import buckpal.application.port.in.SendMoneyUseCase;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,7 +15,7 @@ public class SendMoneyController {
 
   @PostMapping("/accounts/send/{sourceAccountId}/{targetAccountId}/{amount}")
   void sendMoney(
-      @PathVariable("sourceAccountId") Long sourceAccountId,
+      @PathVariable("sourceAccountId") Long sourceAccountId,˜˜
       @PathVariable("targetAccountId") Long targetAccountId,
       @PathVariable("amount") Long amount) {
 
